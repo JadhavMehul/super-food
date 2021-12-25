@@ -5,9 +5,67 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../public/image/slide/slide-1.jpg");
+  background-repeat: no-repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*------------ Header Component ------------*/
+.header {
+  background-color: #ff9b06;
+  border-radius: 50px;
+}
+
+.nav_brand {
+  font-family: "Pacifico";
+  font-size: 30px;
+}
+.nav-link:hover{
+  background-color: white;
+  border-radius: 10px;
+  padding: 0%;
+  margin: 8px;
+}
+
+/*------------ Home Screen Component ------------*/
+
+.banner_titleh {
+  color: #ff9b06;
+  padding-top: 20vh;
+  font-size: 90px;
+  font-family: "Rampart One";
+  text-align: center;
+}
+.banner_subtitle{
+  margin-top: 20px;
+  text-align: center;
+  width: 680px;
+  color: white;
+}
+.banner_btn{
+  width: 212px;
+}
+.banner_btn a {
+  border-color: #ff9b06;
+  color: #ff9b06;
+  border-radius: 50px;
+  width: 103px;
+}
+.banner_btn a:hover {
+  background-color: #ff9b06;
+  color: white;
+}
+
+/* Banner Container */
+
+.banner_title {
+  color: #ff9b06;
+  padding-top: 10vh;
+  font-size: 90px;
+  font-family: "Rampart One";
+  text-align: center;
 }

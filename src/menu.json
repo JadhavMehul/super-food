@@ -1,0 +1,42 @@
+[
+    {
+        "_id": "1",
+        "name": "Burger",
+        "category": "Fast Food",
+        "image": "../../image/food/fast food/ff1.png",
+        "price": 85,
+        "rating": 4.5
+    },
+    {
+        "_id": "2",
+        "name": "Pizza",
+        "category": "Fast Food",
+        "image": "../../image/food/fast food/ff2.png",
+        "price": 120,
+        "rating": 4.0
+    },
+    {
+        "_id": "3",
+        "name": "Food 1",
+        "category": "Lunch/Dinner",
+        "image": "../../image/food/lunch_dinner/ld1.jpg",
+        "price": 220,
+        "rating": 4.8
+    },
+    {
+        "_id": "4",
+        "name": "Food 2",
+        "category": "Lunch/Dinner",
+        "image": "../../image/food/lunch_dinner/ld2.jpg",
+        "price": 130,
+        "rating": 4.5
+    },
+    {
+        "_id": "5",
+        "name": "Food 3",
+        "category": "Lunch/Dinner",
+        "image": "../../image/food/lunch_dinner/ld3.jpg",
+        "price": 165,
+        "rating": 4.5
+    }
+]
