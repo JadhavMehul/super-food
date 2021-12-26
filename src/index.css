@@ -69,3 +69,11 @@ code {
   font-family: "Rampart One";
   text-align: center;
 }
+
+/* Cart Page */
+
+.qtyBtn {
+  width: 45px;
+  border-radius: 5px;
+  border: 1px solid black;
+}

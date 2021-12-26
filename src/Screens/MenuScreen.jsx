@@ -1,11 +1,33 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import data from "../menu.json"
 
 export default function MenuScreen() {
     console.log(data);
 
+    const [cartData, setCartData] = useState();
+
+    const getcart = () => {
+        let list = JSON.parse(localStorage.getItem("cartData"))
+        if (list) {
+            setCartData(list)
+        } else {
+            setCartData([])
+        }
+        
+    }
     const handleCart = (food) => {
-        localStorage.setItem("cartData", JSON.stringify(food))
+
+        let alreadyExists = false;
+        cartData.forEach(x => {
+            if (x._id === food._id) {
+                alreadyExists = true;
+            }
+        });
+        if (!alreadyExists) {
+            cartData.push({...food});
+        }
+        
+        localStorage.setItem("cartData", JSON.stringify(cartData))
     }
 
     let sortedCategory = [];
@@ -14,7 +36,9 @@ export default function MenuScreen() {
         data.map((item) => (allCategory.push(item.category)))
         sortedCategory = [...new Set(allCategory)];
     }
-
+    useEffect(() => {
+        getcart()
+    }, [])
     return (
         <div className="banner container">
             {
@@ -24,7 +48,7 @@ export default function MenuScreen() {
                         <div className="row">
                             {
                                 data.filter(x => x.category === category).map((items) => (
-                                    <div className="col-md-4 py-3" key={items.id}>
+                                    <div className="col-md-4 py-3" key={items._id}>
                                         <div className="card mx-auto" style={{width: "14rem"}}>
                                             <img className="card-img-top" style={{width: "14rem", height: "14rem"}} src={items.image} alt="..." />
                                             <div className="card-body">

@@ -5,7 +5,8 @@
         "category": "Fast Food",
         "image": "../../image/food/fast food/ff1.png",
         "price": 85,
-        "rating": 4.5
+        "rating": 4.5,
+        "quantity": 1
     },
     {
         "_id": "2",
@@ -13,7 +14,8 @@
         "category": "Fast Food",
         "image": "../../image/food/fast food/ff2.png",
         "price": 120,
-        "rating": 4.0
+        "rating": 4.0,
+        "quantity": 1
     },
     {
         "_id": "3",
@@ -21,7 +23,8 @@
         "category": "Lunch/Dinner",
         "image": "../../image/food/lunch_dinner/ld1.jpg",
         "price": 220,
-        "rating": 4.8
+        "rating": 4.8,
+        "quantity": 1
     },
     {
         "_id": "4",
@@ -29,7 +32,8 @@
         "category": "Lunch/Dinner",
         "image": "../../image/food/lunch_dinner/ld2.jpg",
         "price": 130,
-        "rating": 4.5
+        "rating": 4.5,
+        "quantity": 1
     },
     {
         "_id": "5",
@@ -37,6 +41,7 @@
         "category": "Lunch/Dinner",
         "image": "../../image/food/lunch_dinner/ld3.jpg",
         "price": 165,
-        "rating": 4.5
+        "rating": 4.5,
+        "quantity": 1
     }
 ]

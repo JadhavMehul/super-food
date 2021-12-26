@@ -23,9 +23,7 @@ export default function Header() {
                             <li className="nav-item active">
                                 <Link className="nav-link" style={{fontSize: "24px"}} to="/cart">Cart</Link>
                             </li>
-                            <li className="nav-item active">
-                                <Link className="nav-link" style={{fontSize: "24px"}} to="/admin">Admin</Link>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
